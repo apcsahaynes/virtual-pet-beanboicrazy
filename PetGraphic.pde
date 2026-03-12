@@ -61,21 +61,26 @@ void drawPetGraphic() {
   // Body
   fill(170, 210, 255);
   noStroke();
-  ellipse(210, 220, 140, 120);
+  ellipse(210, 220, myPet.getWeight() + 100, myPet.getWeight() + 100);
 
   // Head
   fill(170, 210, 255);
   ellipse(210, 145, 100, 90);
 
   // Eyes
-  fill(50);
+  fill(255);
   ellipse(190, 138, 14, 14);
   ellipse(230, 138, 14, 14);
+  
+  // Eye coloe
+  fill(87, 210, 255);
+  ellipse(190, 138, 10, 10);
+  ellipse(230, 138, 10, 10);
 
   // Eye shine
-  fill(255);
-  ellipse(195, 134, 5, 5);
-  ellipse(235, 134, 5, 5);
+  fill(0);
+  ellipse(190, 139, 5, 5);
+  ellipse(230, 139, 5, 5);
 
   // Nose
   fill(255, 160, 180);
